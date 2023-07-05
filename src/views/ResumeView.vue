@@ -1,25 +1,23 @@
 <template>
-    <div>
-        <h2>Resume</h2>
-        <div v-for="item in education" :key="item">
-            <h4>Institution: {{ item.institution }} </h4>
-            <p>Grade: {{ item.grade }}</p>
-            <p>Certificate: {{ item.certificate }}</p>
-        </div>
-    </div>
+  <div>
+    <h2>Resume</h2>
+    <Education />
+    <Experience />
+    <Skills />
+  </div>
 </template>
 
 <script>
-    export default {
-        computed: {
-            education() {
-                return this.$store.state.education
-            }
-        },
-        mounted() {
-            this.$store.dispatch('getEducation');
-        },
-    }
+import Education from "../components/Education.vue";
+import Experience from "../components/Experience.vue";
+import Skills from "../components/Skills.vue";
+export default {
+  components: {
+    Education,
+    Experience,
+    Skills,
+  },
+};
 </script>
 
 <style scoped>
