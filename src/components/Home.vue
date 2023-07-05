@@ -19,8 +19,5 @@
 </script>
 
 <style scoped>
-img {
-    width: 25%;
-    height: 25%;
-}
+
 </style>
