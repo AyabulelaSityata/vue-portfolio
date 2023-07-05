@@ -1,14 +1,6 @@
 <template>
     <div class="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="https://i.postimg.cc/Jz8jBxL0/C12-Ayabulela-Sityata-2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+       <h1>AYA</h1>
     </div>
 </template>
 
@@ -19,5 +11,9 @@
 </script>
 
 <style scoped>
+.home{
+    background-image: url(https://i.postimg.cc/9fpV1WKZ/land.jpg);
+    height: 70vh;
+  }
 
 </style>
