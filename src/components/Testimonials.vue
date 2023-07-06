@@ -45,6 +45,7 @@ export default {
     flex-flow: column nowrap;
     overflow-x: hidden;
     background-size: cover;
+    margin-top: 2rem;
 }
 .flip-card {
     background-color: transparent;
@@ -77,13 +78,14 @@ export default {
     position: absolute;
     backface-visibility: hidden;
 }
+
 .flip-card-back {
     display: flex;
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
     background-color: var(--darkCOLOR);
-    color: var(--highlightCOLOR)
+
 }
 .flip-card .flip-card-inner .flip-card-front img,
 .flip-card .flip-card-inner .flip-card-back {

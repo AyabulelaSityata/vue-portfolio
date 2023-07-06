@@ -1,5 +1,6 @@
-import { createStore } from 'vuex'
-const apiUrl = 'https://ayabulelasityata.github.io/json-portfolio/data/data.json'
+import { createStore } from "vuex";
+const apiUrl =
+  "https://ayabulelasityata.github.io/json-portfolio/data/data.json";
 
 export default createStore({
   state: {
@@ -7,56 +8,62 @@ export default createStore({
     projects: null,
     experience: null,
     skills: null,
-    testimonials: null
+    testimonials: null,
+    info: null,
   },
-  getters: {
-  },
+  getters: {},
   mutations: {
-    setEducation(state, education){
-      state.education = education
+    setEducation(state, education) {
+      state.education = education;
     },
-    setProjects(state, projects){
-      state.projects = projects
+    setProjects(state, projects) {
+      state.projects = projects;
     },
-    setExperience(state, experience){
-      state.experience = experience
+    setExperience(state, experience) {
+      state.experience = experience;
     },
-    setSkills(state, skills){
-      state.skills = skills
+    setSkills(state, skills) {
+      state.skills = skills;
     },
-    setTestimonials(state, testimonials){
-      state.testimonials = testimonials
-    }
+    setTestimonials(state, testimonials) {
+      state.testimonials = testimonials;
+    },
+    setInfo(state, info) {
+      state.info = info;
+    },
   },
   actions: {
     async getEducation(context) {
-      const res = await fetch(apiUrl)
-      const {education} = await res.json()
-      console.log(education);
-      context.commit("setEducation", education)
-          //  experiance
+      const res = await fetch(apiUrl);
+      const { education } = await res.json();
+      context.commit("setEducation", education);
+      //  experiance
     },
     async getProjects(context) {
-      const res = await fetch(apiUrl)
-      const {projects} =  await res.json()
-      context.commit("setProjects", projects)
+      const res = await fetch(apiUrl);
+      const { projects } = await res.json();
+      context.commit("setProjects", projects);
     },
     async getExperience(context) {
-      const res = await fetch(apiUrl)
-      const {experience} = await res.json()
-      context.commit("setExperience", experience)
+      const res = await fetch(apiUrl);
+      const { experience } = await res.json();
+      context.commit("setExperience", experience);
     },
     async getSkills(context) {
-      const res = await fetch(apiUrl)
-      const {skills} = await res.json()
-      context.commit("setSkills", skills)
+      const res = await fetch(apiUrl);
+      const { skills } = await res.json();
+      context.commit("setSkills", skills);
     },
     async getTestimonials(context) {
-      const res = await fetch(apiUrl)
-      const {testimonials} = await res.json()
-      context.commit("setTestimonials", testimonials)
+      const res = await fetch(apiUrl);
+      const { testimonials } = await res.json();
+      context.commit("setTestimonials", testimonials);
+    },
+    async getInfo(context) {
+      const res = await fetch(apiUrl);
+      const { info } = await res.json();
+      context.commit("setInfo", info);
     },
   },
-  modules: {
-  }
-})
+  modules: {},
+});
