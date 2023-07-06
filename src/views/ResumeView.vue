@@ -3,7 +3,7 @@
     <h2>Resume</h2>
     <div class="row">
       <div class="col-6">
-        <div class="card mb-3" style="max-width: 540px;" v-for="info in info" :key="info.id">
+        <div class="card mb-3" v-for="info in info" :key="info.id">
           <div class="row g-0">
             <div class="col-md-4">
               
