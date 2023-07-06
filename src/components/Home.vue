@@ -20,8 +20,9 @@
 .home {
     width: 100%;
     height: 95vh;
-    background-image: url(https://i.postimg.cc/9fpV1WKZ/land.jpg);
+    background-image: url(https://i.postimg.cc/Jz8jBxL0/C12-Ayabulela-Sityata-2.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 h1{
     margin-top: -40%;
