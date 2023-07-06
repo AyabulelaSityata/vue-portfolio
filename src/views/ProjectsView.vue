@@ -1,7 +1,6 @@
 <template>
-    <div>
+    <div class="projectsDiv">
         <h2>Projects</h2>
-        
         <Projects/>
     </div>
 </template>
@@ -16,5 +15,7 @@ export default {
 </script>
 
 <style scoped>
-
+.projectsDiv {
+    background-color: #bbb;
+}
 </style>

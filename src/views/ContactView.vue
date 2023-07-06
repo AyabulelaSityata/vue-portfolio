@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="contact">
         <h2>Contact</h2>
     </div>
 </template>
@@ -11,5 +11,7 @@
 </script>
 
 <style scoped>
-
+.contact {
+    background-color: #bbb;
+}
 </style>
