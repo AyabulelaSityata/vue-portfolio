@@ -1,15 +1,21 @@
 <template>
-  <div>
-    <h3 class="text-center display-6 fw-bold">Work Experience</h3>
-    <div class="experience" v-if="experience">
-      <div class="exp-container mb-4" v-for="experience in experience" :key="experience.id">
-        <h4>{{ experience.company }}</h4>
-      <p>{{ experience.occupation }}</p>
-      <p>{{ experience.description }}</p>
-      <p>{{ experience.duration }}</p>
+  <div class="container-fluid">
+    <h3 class="text-center display-6 fw-bold ">Work Experience</h3>
+    <div class="row justify-content-center gap-5">
+      <div class="card p-0" v-for="experience in experience" style="width: 15rem;" :key="experience.id">
+          <img :src="experience.logo" id="img" class="card-img-top" alt=" " loading="lazy">
+          <div class="card-body">
+              <h5 class="card-head">
+                  {{ experience.company
+                  }}:
+              </h5>
+              <h5 class="card-head">
+                  <p>{{experience.description}}</p>
+                  {{ experience.duration }}
+              </h5>
+          </div>
       </div>
-    </div>
-    <div v-else>Loading</div>
+  </div>
   </div>
 </template>
 
@@ -27,11 +33,5 @@ export default {
 </script>
 
 <style scoped>
-.exp-container {
-  border-radius: 1rem;
-  width: 80%;
-  margin: auto;
-  padding: 0.5rem;
-  background-image: linear-gradient(#0000003a, #0000003f);
-}
+
 </style>

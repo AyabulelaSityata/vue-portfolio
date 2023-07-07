@@ -1,15 +1,28 @@
 <template>
-  <div>
-    <h3 class="text-center display-6 fw-bold">Education</h3>
-    <div class="education" v-if="education">
-      <div class="edu-container mb-4" v-for="edu in education" :key="edu.id">
-        <h4>{{ edu.institution }}</h4>
-        <p>{{ edu.major }}</p>
-        <p>{{ edu.year }}</p>
+  
+    <h3 class="text-center display-6 fw-bold ">Education</h3>
+    <div class="container">
+      <div class="row justify-content-center gap-5">
+          <div class="card p-0" v-for="education in education" style="width: 15rem;" :key="education.id">
+              <img :src="education.logo" id="img" class="card-img-top" alt=" " loading="lazy">
+              <div class="card-body">
+                  <h5 class="card-head">
+                      {{ education.institution
+                      }}:
+                  </h5>
+                  <h5 class="card-head">
+                      <p>{{education.major}}</p>
+                      {{ education.year }}
+                  </h5>
+              </div>
+          </div>
       </div>
-    </div>
-    <div v-else>Loading</div>
   </div>
+
+
+
+
+  
 </template>
 
 <script>
@@ -27,11 +40,5 @@ export default {
 </script>
 
 <style scoped>
-.edu-container {
-  border-radius: 1rem;
-  width: 80%;
-  margin: auto;
-  padding: 0.5rem;
-  background-image: linear-gradient(#0000003a, #0000003f);
-}
+
 </style>

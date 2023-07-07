@@ -5,7 +5,9 @@
        
     </div>
      <div class="h1">
-        <h1 class="h1">Hello, I'm <br>Ayabulela Sityata <br>and this is my resume</h1>
+        <p>Hello, I'm </p>
+        <h2>Ayabulela Sityata </h2>
+        <p>and this is my resume.</p>
         
      </div>
 </template>
@@ -21,6 +23,8 @@
     width: 100%;
     height: 95vh;
     background-image: url(https://i.postimg.cc/Jz8jBxL0/C12-Ayabulela-Sityata-2.jpg);
+    background-size:cover;
+    min-height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
