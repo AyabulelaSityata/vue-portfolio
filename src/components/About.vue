@@ -9,7 +9,7 @@
             alt=""/>
         </div>
         <div class="col">
-          <p>I am an experienced joiner with well developed skills and experience in groundwork, concrete finishing and steel fixing and have worked in the construction industry since 1982. I am also a skilled labourer who has supported many different trades over the years. I have a full clean UK driving licence with entitlement of up to 7.5 tonne. I am keen to return to work after a period of training and personal development which has broadened my skills and experiences.</p>
+          <p class="words">I am a 26 year old young aspiring Web Developer,born and raised in Khayelitsha, Cape Town.</p>
         </div>
       </div>
     </div>
@@ -23,5 +23,24 @@ export default {
 </script>
 
 <style scoped>
+
+.img-fluid {
+  margin: 60px;
+}
+
+.about {
+  width: 100%;
+    background-color: #bbb;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: auto;
+}
+
+.words {
+  font-size: 50px;
+  text-shadow: white 5px 5px 0px;
+  margin-top: 100px;
+}
 
 </style>
