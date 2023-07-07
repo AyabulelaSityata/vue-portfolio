@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <h3 class="text-center display-6 fw-bold">Skills</h3>
-    <div class="skills-container mb-4" v-for="skill in skills" :key="skill.id">
-      <h4>{{ skill.name }}</h4>
-      <p>{{ skill.image }}</p>
-      <p>{{ skill.level }}</p>
+  <h3 class="text-center display-6 fw-bold">Skills</h3>
+  <div class="eduction" v-if="skills">
+    <div class="row">
+      <div class="col" v-for="skills in skills" :key="skills.id">
+        <img :src="skills.image" alt="">
+      </div>
     </div>
   </div>
+  <div v-else>Loading</div>
 </template>
 
 <script>
@@ -24,10 +25,14 @@ export default {
 
 <style scoped>
 .skills-container {
-  border-radius: 1rem;
-  width: 80%;
+
   margin: auto;
   padding: 0.5rem;
-  background-image: linear-gradient(#0000003a, #0000003f);
+}
+
+img {
+  height:10rem;
+  margin-top: 2rem;
+  
 }
 </style>

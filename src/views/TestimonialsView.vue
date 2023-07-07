@@ -1,6 +1,5 @@
 <template>
-    <div class="test">
-        <h2 class="test-heading">Testimonials</h2>
+    <div>
         <Testimonials/>
     </div>
 </template>
@@ -15,7 +14,7 @@ import Testimonials from '@/components/Testimonials.vue';
 </script>
 
 <style scoped>
-.test {
+div {
     background-color: #bbb;
 }
 </style>

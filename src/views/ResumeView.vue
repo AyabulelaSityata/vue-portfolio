@@ -1,40 +1,9 @@
 <template>
-  <div>
-    <h2>Resume</h2>
-    <div class="row">
-      <div class="col-6">
-        <div class="card mb-3" v-for="info in info" :key="info.id">
-          <div class="row g-0">
-            <div class="col-md-4">
-              
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">{{ info.name }}</h5>
-                <p class="card-text">{{ info.birth }}</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Education />
-      </div>
-      <div class="col-6">
-        <Experience />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col"> 
-        <Skills />
-      </div>
-      <div class="col">
-
-      </div>
-    </div>
+  <div class="resume">
     
-    
-    
-   
+    <Education/>
+    <Skills/>
+    <Experience/>    
   </div>
 </template>
 
@@ -46,22 +15,18 @@ export default {
   components: {
     Education,
     Experience,
-    Skills,
-  },
-  computed: {
-    info() {
-      return this.$store.state.info;
-    },
-  },
-  mounted() {
-    this.$store.dispatch("getInfo");
+    Skills
   },
 };
 </script>
 
 <style scoped>
-.col-md-4{
-  background-color: black;
+.col{
+  display: inline-flex;
+  justify-content: center;
 }
 
+.container-fluid {
+  
+}
 </style>

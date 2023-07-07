@@ -67,7 +67,7 @@ export default {
     text-align: center;
     position: relative;
     transition: all 0.5s ease-in-out;
-    transform-style: inherit;
+  
 }
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg)

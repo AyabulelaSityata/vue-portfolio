@@ -2,7 +2,7 @@
     <div class="container-fluid" >
       <div class="row mx-auto">
         <div class="col-4" v-for="project in projects" :key="project.id">
-          <div class="card">
+          <div class="card" style="width: ">
             <img :src="project.image" class="card-img-top" alt="Image">
             <div class="card-body">
               <h5 class="card-title">{{project.title}}</h5>
