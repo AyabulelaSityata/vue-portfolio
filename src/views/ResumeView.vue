@@ -21,12 +21,7 @@ export default {
 </script>
 
 <style scoped>
-.col{
-  display: inline-flex;
-  justify-content: center;
-}
-
-.container-fluid {
-  
+.resume {
+  background-color: #bbb;
 }
 </style>
